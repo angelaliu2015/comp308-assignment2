@@ -23,7 +23,7 @@ function requireAuth(req, res, next) {
 /* GET business contact List page. READ */
 router.get('/', requireAuth, (req, res, next) => {
   // find all businesses in the businsesses collection
-  business.find( (err, businesses) => {
+  business.find((err, businesses) => {
     if (err) {
       return console.error(err);
     }
@@ -34,7 +34,7 @@ router.get('/', requireAuth, (req, res, next) => {
         displayName: req.user.displayName
       });
     }
-  });
+  }).sort({contactname:1});
 
 });
 
@@ -74,7 +74,7 @@ router.get('/:id', requireAuth, (req, res, next) => {
       let id = mongoose.Types.ObjectId.createFromHexString(req.params.id);
 
         // find one business by its id
-      business.findById(id, (err, businesses) => {
+      business.findById(id,(err, businesses) => {
         if(err) {
           console.log(err);
           res.end(error);
@@ -86,7 +86,7 @@ router.get('/:id', requireAuth, (req, res, next) => {
               displayName: req.user.displayName
           });
         }
-      });
+      }).sort({contactname:1});
     } catch (err) {
       console.log(err);
       res.redirect('/errors/404');
