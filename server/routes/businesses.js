@@ -73,7 +73,7 @@ router.get('/:id', requireAuth, (req, res, next) => {
       // get a reference to the id from the url
       let id = mongoose.Types.ObjectId.createFromHexString(req.params.id);
 
-        // find one business by its id
+        // find one business by its id and sort by alphabetically
       business.findById(id,(err, businesses) => {
         if(err) {
           console.log(err);
