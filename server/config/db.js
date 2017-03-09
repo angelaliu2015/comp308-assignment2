@@ -1,3 +1,4 @@
+// db.js Author: Angela Liu Website name: Business Contact List Description: Database configration
 module.exports = {
   //local MongoDB deployment ->
   "URI": "mongodb://localhost/videogames"

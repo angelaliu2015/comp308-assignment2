@@ -1,4 +1,4 @@
-/* custom JS goes here */
+/* app.js Author: Angela Liu Website name: Business Contact List Description: error message*/
 
 // IIFE
 (function(){

@@ -1,3 +1,4 @@
+// business.js Author: Angela Liu Website name: Business Contact List Description: business model
 // require modules for our BusinessContact Model
 let mongoose = require('mongoose');
 let Schema = mongoose.Schema; //alias for mongoose Schema

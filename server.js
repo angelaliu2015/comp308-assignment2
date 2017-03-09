@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 
 /**
- * Module dependencies.
+ * server.js Author: Angela Liu Website name: Business Contact List
+ * Description: Module dependencies.
  */
 
 let app = require('./server/app');
