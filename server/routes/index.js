@@ -47,10 +47,10 @@ router.get('/login', (req, res, next)=>{
     res.render('auth/login', {
       title: "Login",
       businesses: '',
-      messages: req.flash('loginMessage'),
+      messages: req.flash('error'),
       displayName: req.user ? req.user.displayName : ''
     });
-    return done(null,false,{messages: 'User name and password is incorrect.'});
+    return;
 ;
   } else {
     return res.redirect('/businesses'); // redirect to businesses list
@@ -61,7 +61,7 @@ router.get('/login', (req, res, next)=>{
 router.post('/login', passport.authenticate('local', {
   successRedirect: '/businesses',
   failureRedirect: '/login',
-  failureFlash: 'loginMessage',
+  failureFlash: true
 }));
 
 // GET /register - render the registration view

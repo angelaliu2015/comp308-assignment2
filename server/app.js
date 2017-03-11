@@ -1,4 +1,4 @@
-// app.js Author: Angela Liu Website name: Business Contact List Description: business modules
+// app.js Author: Angela Liu Website name: Business Contact List Description: business modules reference Professor inclass code
 // modules required for the project
 let express = require('express');
 let path = require('path'); // part of node.js core

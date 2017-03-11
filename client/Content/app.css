@@ -14,7 +14,7 @@ a{text-decoration:none;}
 .txt-center{text-align:center;}/* text align center */
 .float-rt{float:right;}/* float right */
 .float-lt{float:left;}/* float left */
-.clear{clear:both;}/* clear float */:
+.clear{clear:both;}/* clear float */
 .pos-relative{position:relative;}/* Position Relative */
 .pos-absolute{position:absolute;}/* Position Absolute */
 .vertical-base{	vertical-align:baseline;}/* vertical align baseline */
